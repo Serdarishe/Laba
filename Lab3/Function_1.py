@@ -39,7 +39,7 @@ def perm(str):
     if len(str) == 1:
         return str
     lst = []
-    for i in range(1,len(str)):
+    for i in range(len(str)):
         for j in perm(str[:i]+str[i+1:]):
             lst.append(str[i]+j)
     return lst
