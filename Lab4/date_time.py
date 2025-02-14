@@ -18,8 +18,8 @@ cur_timee = datetime.now()
 print (cur_timee.strftime("%H:%M:%S"))
 
 # 4
-day1 = datetime(2050, 2, 13, 17, 10, 30)
-day2 = datetime(1, 2, 13, 16, 9, 15)
+day1 = datetime.now()
+day2 = datetime(2007, 11, 13, 3, 13, 23)
 
 diff = (day1 - day2).total_seconds()
 print (diff)
