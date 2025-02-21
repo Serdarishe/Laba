@@ -4,7 +4,7 @@ with open(reggex,'r',encoding='utf-8')as file:
     text = file.read()
 
 #1
-t1 = re.match(r'a+b*',text)
+t1 = re.match(r'ab*',text)
 print (t1)
 
 #2
@@ -30,18 +30,22 @@ t6=re.sub(r'[ ,.]', ':', text)
 print(t6)
 
 #7
-w=text.split('_')
+text3 = 'hello_my_dear_friend'
+w=text3.split('_')
 t7=w[0]+''.join(x.capitalize() for x in w[1:])
 print(t7)
 
 #8
-t8 = re.findall(r'[A-Z][^A-Z]*', text)
+text4 = 'ByeByeMan'
+t8 = re.findall(r'[A-Z][^A-Z]*', text4)
 print(t8)
 
 #9
-t9 = re.sub(r'(?<!^)(?=[A-Z])', ' ', text)
+text5 = 'GitGelAlAtMat'
+t9 = re.sub(r'(?<!^)(?=[A-Z])', ' ', text5)
 print(t9)
 
 #10
-t10 = re.sub(r'([a-z])([A-Z])', r'\1_\2', text).lower()
+text6 = 'camelCaseIsCool'
+t10 = re.sub(r'([a-z])([A-Z])', r'\1_\2', text6).lower()
 print(t10) 
