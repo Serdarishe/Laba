@@ -22,33 +22,32 @@ print(appr, lowr)
 
 
 #3
-def is_palindrome(str):
-    str = str.replace(" ", "").lower()
-    return str == str[::-1]
+def is_palindrome(strr):
+    strr = strr.replace(" ", "").lower()
+    if str == str[::-1]:
+        print(f'"{strr}" is a palindrome.')
+        return
+    else:
+        print(f'"{strr}" is not a palindrome.')
+        return
 
 str1 = "level"
-if is_palindrome(str1):
-    print(f'"{str1}" is a palindrome.')
-else:
-    print(f'"{str1}" is not a palindrome.')
+is_palindrome(str1)
 
 str2 = "bye"
-if is_palindrome(str2):
-    print(f'"{str2}" is a palindrome.')
-else:
-    print(f'"{str2}" is not a palindrome.')
+is_palindrome(str2)
 
 #4
 import time
 
-vremya = 25100
+chislo = 25100
 zaderzhka = 2123
 
 time.sleep(zaderzhka / 1000)  
 
-res = vremya ** 0.5
+res = chislo ** 0.5
 
-print(f"Square root of {vremya} after {zaderzhka} milliseconds is {res}")
+print(f"Square root of {chislo} after {zaderzhka} milliseconds is {res}")
 
 
 #5
