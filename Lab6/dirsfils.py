@@ -34,14 +34,13 @@ else:
     print('Exist:', os.access(path, os.F_OK))
 
 #4
-papapa = 'lab6/papapa.txt'
-
-file = open(papapa)
-cnt = 0
-for i in file:
-    cnt +=1
+with open('lab6/papapa.txt','r') as papapa:
+    cnt = 0
+    for i in papapa:
+        cnt +=1
 
 print(cnt)
+
 
 #5
 lst = [0,1,2,3,4,5,6,7,8,9]
@@ -68,7 +67,7 @@ file2 = 'lab6/A.txt'
 with open(file1, 'r') as f1:
     data = f1.read()
 
-with open(file2, 'a') as f2:
+with open(file2, 'w') as f2:
     f2.write(data)
 
 #8
