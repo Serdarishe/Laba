@@ -45,7 +45,7 @@ UP = (0, -1)
 DOWN = (0, 1) 
 LEFT = (-1, 0) 
 RIGHT = (1, 0)
-font = pg.font.Font('lab10/Oswald.ttf', 30)
+font = pg.font.Font('lab10/papka/Oswald.ttf', 30)
 clock = pg.time.Clock()
 
 screen = pg.display.set_mode((W, H))
