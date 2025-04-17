@@ -227,9 +227,7 @@ class Game:
                     
             if self.snake.check_collision() or self.check_wall_collision():
                 self.game_over = True
-                self.save_score(username, game.score,game.level,game.speeed)
-                
-
+                self.save_score(username, game.score,game.level,game.speeed)            
 
 
     def draw(self):
