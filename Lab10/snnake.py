@@ -229,7 +229,6 @@ class Game:
                 self.game_over = True
                 self.save_score(username, game.score,game.level,game.speeed)            
 
-
     def draw(self):
         colors = [(10, 10, 10), (0, 0, 0)]
         for i in range(H // 2):

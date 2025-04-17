@@ -29,7 +29,6 @@ if choise == 1:
 
     cur.execute("INSERT INTO phonebook (full_name, phone) VALUES (%s, %s)", (name, phone))
     conn.commit()
-
 elif choise == 2:
 
     name_to_delete = input("Enter name to delete: ")
